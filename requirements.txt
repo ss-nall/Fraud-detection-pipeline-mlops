@@ -24,3 +24,4 @@ pyyaml
 kubernetes
 docker
 python-multipart
+prometheus-client
