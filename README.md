@@ -18,47 +18,7 @@ REST API inference using FastAPI
 Containerization using Docker
 Kubernetes deployment using Minikube
 Streamlit-based interface for interacting with the model
-Architecture
-                    ┌─────────────────┐
-                    │    Streamlit    │
-                    │   User Interface│
-                    └────────┬────────┘
-                             │
-                             ▼
-                    ┌─────────────────┐
-                    │     FastAPI     │
-                    │   REST Service  │
-                    └────────┬────────┘
-                             │
-                       CSV / JSON
-                             │
-                             ▼
-              ┌──────────────────────────┐
-              │ Feature Engineering &    │
-              │     Preprocessing        │
-              └────────────┬─────────────┘
-                           │
-                           ▼
-                  ┌─────────────────┐
-                  │ Fraud Detection │
-                  │      Model      │
-                  └────────┬────────┘
-                           │
-                           ▼
-                  ┌─────────────────┐
-                  │ Threshold Tuning │
-                  │   & Prediction  │
-                  └─────────────────┘
 
-        ┌─────────────────────────────────────┐
-        │              MLflow                 │
-        │ Experiment Tracking & Model Registry │
-        └─────────────────────────────────────┘
-
-        ┌─────────────────────────────────────┐
-        │        Docker + Kubernetes           │
-        │          Minikube Deployment         │
-        └─────────────────────────────────────┘
 Tech Stack
 Component	Technology
 Programming	Python
